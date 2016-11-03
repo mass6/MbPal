@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+  <title>Form Wizard | Remark Admin Template</title>
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.min.css">
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../../global/vendor/flag-icon-css/flag-icon.css">
+  <link rel="stylesheet" href="../../../global/vendor/jquery-wizard/jquery-wizard.css">
+  <link rel="stylesheet" href="../../../global/vendor/formvalidation/formValidation.css">
+
+  <link rel="stylesheet" href="../../assets/css/jquery.steps.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../../global/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <!--[if lt IE 9]>
+    <script src="../../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+  <!--[if lt IE 10]>
+    <script src="../../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+  <!-- Scripts -->
+  <script src="../../../global/vendor/modernizr/modernizr.js"></script>
+  <script src="../../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+  Breakpoints();
+  </script>
+</head>
+<body class="site-navbar-small ">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-inverse"
+  role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand navbar-brand-center" href="../index.html">
+        <img class="navbar-brand-logo navbar-brand-logo-normal" src="../../assets/images/logo.png"
+        title="Remark">
+        <img class="navbar-brand-logo navbar-brand-logo-special" src="../../assets/images/logo-blue.png"
+        title="Remark">
+        <span class="navbar-brand-text hidden-xs"> Remark</span>
+      </a>
+    </div>
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="hidden-float" id="toggleMenubar">
+            <a data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar -->
+      </div>
+      <!-- End Navbar Collapse -->
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon wb-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+  
+  <!-- Page -->
+  <div class="page animsition">
+
+
+    <div class="page-content container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Panel Wizard Form -->
+          <div class="panel" id="exampleWizardForm">
+            <div class="panel-heading">
+              <h3 class="panel-title">Wizard Form</h3>
+            </div>
+            <div class="panel-body">
+              <!-- Steps -->
+              <div class="steps steps-sm row" data-plugin="matchHeight" data-by-row="true" role="tablist">
+
+                <div class="step col-md-3 current" data-target="#exampleAccount" role="tab">
+                  <span class="step-number">1</span>
+                  <div class="step-desc">
+                    <span class="step-title">Account</span>
+                    <p>Login for identification</p>
+                  </div>
+                </div>
+                <div class="step col-md-3" data-target="#exampleBilling" role="tab">
+                  <span class="step-number">2</span>
+                  <div class="step-desc">
+                    <span class="step-title">Billing</span>
+                    <p>Pay for the bill</p>
+                  </div>
+                </div>
+                <div class="step col-md-3" data-target="#exampleDownload" role="tab">
+                  <span class="step-number">3</span>
+                  <div class="step-desc">
+                    <span class="step-title">Download</span>
+                    <p>Download the App</p>
+                  </div>
+                </div>
+                <div class="step col-md-3" data-target="#exampleGetting" role="tab">
+                  <span class="step-number">4</span>
+                  <div class="step-desc">
+                    <span class="step-title">Getting</span>
+                    <p>Waiting for the goods</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Steps -->
+              <!-- Wizard Content -->
+              <div class="wizard-content">
+                <div class="wizard-pane active" id="exampleAccount" role="tabpanel">
+                  <h2>Step 1 instructions</h2>
+                </div>
+                <div class="wizard-pane" id="exampleBilling" role="tabpanel">
+                  <h2>Step 2 instructions</h2>
+                </div>
+                <div class="wizard-pane" id="exampleDownload" role="tabpanel">
+                  <form id="exampleDownloadForm">
+                    <div class="form-group">
+                      <h2>Download the Moves app</h2>
+                    </div>
+                  </form>
+                </div>
+                <div class="wizard-pane" id="exampleGetting" role="tabpanel">
+                  <div class="text-center margin-vertical-20">
+                    <i class="icon wb-check font-size-40" aria-hidden="true"></i>
+                    <h4>We got your order. Your product will be shipping soon.</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End Wizard Content -->
+            </div>
+          </div>
+          <!-- End Panel Wizard One Form -->
+        </div>
+      </div>    
+    </div>
+
+  </div>
+  <!-- End Page -->
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-legal">© 2016 <a href="http://themeforest.net/item/remark-responsive-bootstrap-admin-template/11989202">Remark</a></div>
+    <div class="site-footer-right">
+      Crafted with <i class="red-600 wb wb-heart"></i> by <a href="http://themeforest.net/user/amazingSurge">amazingSurge</a>
+    </div>
+  </footer>
+  <!-- Core  -->
+  <script src="../../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../../global/vendor/asscroll/jquery-asScroll.js"></script>
+  <script src="../../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../../global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+  <script src="../../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  <!-- Plugins -->
+  <script src="../../../global/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../../global/vendor/formvalidation/formValidation.js"></script>
+  <script src="../../../global/vendor/formvalidation/framework/bootstrap.js"></script>
+  <script src="../../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+  <script src="../../../global/vendor/jquery-wizard/jquery-wizard.js"></script>
+  <!-- Scripts -->
+  <script src="../../../global/js/core.js"></script>
+  <script src="../../assets/js/site.js"></script>
+  <script src="../../assets/js/sections/menu.js"></script>
+  <script src="../../assets/js/sections/menubar.js"></script>
+  <script src="../../assets/js/sections/sidebar.js"></script>
+  <script src="../../../global/js/configs/config-colors.js"></script>
+  <script src="../../assets/js/configs/config-tour.js"></script>
+  <script src="../../../global/js/components/asscrollable.js"></script>
+  <script src="../../../global/js/components/animsition.js"></script>
+  <script src="../../../global/js/components/slidepanel.js"></script>
+  <script src="../../../global/js/components/switchery.js"></script>
+  <script src="../../../global/js/components/jquery-wizard.js"></script>
+  <script src="../../../global/js/components/matchheight.js"></script>
+  <script src="../../assets/examples/js/forms/moves-wizard.js"></script>
+</body>
+</html>

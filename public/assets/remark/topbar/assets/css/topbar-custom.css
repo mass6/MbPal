@@ -1,0 +1,193 @@
+body.site-navbar-small {
+    padding-top: 60px;
+}
+.no-border {
+    border: none;
+}
+img.learn-more {
+    height: 40px;
+}
+@media (min-width: 768px) {
+    .site-navbar .navbar-header {
+        width: 300px;
+    }
+}
+.site-navbar-small .site-navbar {
+    height: 80px;
+    min-height: 80px;
+}
+.site-navbar .navbar-header .navbar-brand-logo {
+    height: 50px;
+}
+span.navbar-brand-text {
+    font-size: 20px;
+}
+
+/* Moves Wizard */
+.steps.row {
+    margin-bottom: 40px;
+}
+.steps-sm .step {
+    cursor: pointer;
+}
+.moves-wrapper {
+    min-height: 550px;
+}
+#moves-logo {
+    /*float: left;*/
+    /*margin-left: 140px;*/
+    margin-top: 110px;
+}
+.moves-download {
+    margin-top: 50px;
+    font-size:20px;
+}
+a.moves-download.btn.btn-lg {
+    padding-top: 0;
+    margin-bottom: 30px;
+    line-height: 0;
+    padding-bottom: 25px;
+    border: none;
+}
+i.icon.bd-apple, i.icon.bd-android {
+    font-size: 30px;
+}
+#header-bg-img {
+    /*position: absolute;*/
+    margin-top:20px;
+    /*margin-bottom:20px;*/
+    /*margin-left:180px;*/
+}
+.badges {
+    position: absolute;
+    left: 0px;
+    top: 82%;
+    width: 374px;
+}
+.android-badge {margin-left:10px;}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    .form-group.labelauty-div {
+        margin-bottom: 0;
+    }
+    .moves-wrapper {
+        min-height: 20px;
+    }
+    #moves-logo {
+        /*float: none;*/
+        /*margin-left: 60px;*/
+        margin-top: 15px;
+    }
+    .moves-download {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    a.moves-download.btn.btn-lg {
+        padding-bottom: 20px;
+        border: none;
+    }
+    i.icon.bd-apple, i.icon.bd-android {
+        font-size: 20px;
+    }
+    #header-bg-img {
+        /*position: relative;*/
+        /*left: 66px;*/
+        /*top: 260px;*/
+        width: 182px;
+        /*height: 385px;*/
+        /*margin-left: 21px;*/
+        margin-top:20px;
+    }
+    .badges {
+        position: relative;
+        width: auto;
+        padding: 0;
+        margin-bottom:20px;
+    }
+    .appstore-badge {
+        width: 110px;
+        height: 33px;
+    }
+    .android-badge {
+        width: 97px;
+        height: 33px;
+        margin-left: 6px;
+        float: none;
+    }
+}
+
+/* Smartphone Landscape */
+@media screen and (max-height: 480px) {
+    .form-group.labelauty-div {
+        margin-bottom: 0;
+    }
+    .moves-wrapper {
+        min-height: 20px;
+    }
+    #moves-logo {
+        /*float: none;*/
+        /*margin-left: 132px;*/
+        margin-top: 15px;
+    }
+    .moves-download {
+        margin:10px;
+        font-size: 14px;
+    }
+    a.moves-download.btn.btn-lg {
+        padding-bottom: 20px;
+        border: none;
+    }
+    i.icon.bd-apple, i.icon.bd-android {
+        font-size: 20px;
+    }
+    #header-bg-img {
+        /*position: relative;*/
+        width: 182px;
+        /*height: 385px;*/
+        /*margin-left: 90px;*/
+        margin-top:20px;
+    }
+    .badges {
+        position: relative;
+        width: auto;
+        padding: 0;
+        margin-bottom:20px;
+    }
+    .appstore-badge {
+        width: 183px;
+        height: 55px;
+    }
+    .android-badge {
+        width: 162px;
+        height: 55px;
+        margin-left: 6px;
+        float: none;
+    }
+}
+
+#access-token-btn {margin-bottom: 50px;}
+.phone-type-wrapper {
+    margin-bottom: 20px;
+}
+.phone-type-wrapper input.labelauty + label {
+    background-color: #eaeff1;
+}
+.phone-type-wrapper input.labelauty:checked + label {
+    background-color: #000000;
+}
+.phone-type-wrapper input.labelauty:checked:not([disabled]) + label:hover {
+    background-color: #000000;
+}
+.phone-type-wrapper input.labelauty:not(:checked):not([disabled]) + label:hover {
+    color: #76838f;
+    background-color: #d5dde0;
+}
+.phone-type-wrapper input.labelauty + label > span.labelauty-unchecked-image {
+    /*background-image: url("images/input-unchecked.png");*/
+    background-image: none;
+}
+
+#moves-tips {
+    margin-top: 50px;
+}
